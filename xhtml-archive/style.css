@@ -1,0 +1,267 @@
+/* ===========================
+   Embedded Fonts
+   =========================== */
+
+@font-face {
+  font-family: "Nirmala UI";
+  src: url("fonts/NirmalaUI.ttf");
+}
+
+@font-face {
+  font-family: "Noto Sans Devanagari";
+  src: url("fonts/NotoSansDevanagari-Regular.ttf");
+}
+
+/* ===========================
+   Base Typography
+   =========================== */
+
+body {
+  margin: 1.5em;
+  font-family: "Nirmala UI", "Noto Sans Devanagari", sans-serif;
+  line-height: 1.5;
+  direction: ltr;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+/* Normalize base font size across all content */
+.entry,
+.sense,
+.sense-body,
+.examples,
+.ex,
+.hi-en,
+.rom,
+.gloss,
+.notes,
+.cultural-note,
+.common-mistakes {
+  font-size: 1em;
+}
+
+.hw {
+  font-size: 1.8em;
+  margin-bottom: 0.2em;
+}
+
+.roman {
+  font-weight: normal;
+  font-size: 0.9em;
+  opacity: 0.85;
+}
+
+/* ===========================
+   Entry Container
+   =========================== */
+
+.entry {
+  margin-top: 2.2em;
+  padding-top: 0.8em;
+  border-top: 1px solid #eee;
+}
+
+/* ===========================
+   POS / Header Area
+   =========================== */
+
+.pos {
+  margin-bottom: 0.8em;
+  padding-left: 0.6em;
+  font-style: italic;
+}
+
+.pos-main {
+  font-weight: bold;
+}
+
+.pos-notes {
+  margin-left: 0.2em;
+  opacity: 0.95;
+}
+
+/* ===========================
+   Sense Structure
+   =========================== */
+
+.sense {
+  margin-bottom: 1.5em;
+  margin-top: 1.6em;
+}
+
+.sense-head {
+  margin-bottom: 0.3em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3em;
+  font-size: 1em;
+}
+
+.sense-label,
+.sense-num,
+.sense-sep {
+  font-weight: bold;
+}
+
+.sense-gloss {
+  font-weight: normal;
+  margin-left: 0.4em;
+}
+
+.sense-pos-line {
+  margin-bottom: 0.3em;
+}
+
+.sense-pos {
+  font-weight: bold;
+}
+
+.sense-notes {
+  font-weight: normal;
+  font-style: italic;
+  margin-left: 0.5em;
+  opacity: 0.9;
+}
+
+.sense-inline {
+  margin-bottom: 0.4em;
+}
+
+.synonyms {
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* ===========================
+   Notes Block
+   =========================== */
+
+.sense-block {
+  margin: 0.6em 0;
+  padding-left: 0.6em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  border-left: 3px solid #ddd;
+  background: #fafafa;
+}
+
+.notes {
+  margin-bottom: 0.6em;
+}
+
+.cultural-note,
+.common-mistakes {
+  margin-bottom: 0.3em;
+}
+
+/* ===========================
+   Examples
+   =========================== */
+
+.examples {
+  margin-top: 0.8em;
+}
+
+.examples-label {
+  font-weight: bold;
+  margin-bottom: 0.6em;
+}
+
+.ex {
+  margin-bottom: 0.8em;
+  padding-left: 0.6em;
+}
+
+.hi-en {
+  display: block;
+  margin-bottom: 0.25em;
+}
+
+.hi,
+.en {
+  display: inline;
+  opacity: 0.92;
+}
+
+.rom {
+  display: block;
+  margin-bottom: 0.25em;
+  opacity: 0.85;
+}
+
+.meta {
+  display: block;
+  font-size: 0.9em;
+  opacity: 0.85;
+}
+
+.audio-links {
+  display: block;
+  font-size: 0.85em;
+  margin-bottom: 0.25em;
+}
+
+.audio-label {
+  opacity: 0.7;
+}
+
+.audio-link {
+  text-decoration: none;
+}
+
+.audio-link:visited {
+  /* Replaying a sentence over and over is the whole point of a study
+     tool -- a "you've clicked this before" visited color would just be
+     noise, so make it identical to the unvisited state. */
+  color: inherit;
+}
+
+/* ===========================
+   Morphology
+   =========================== */
+
+.morph {
+  font-size: 0.9em;
+  margin-top: 1.8em;
+  opacity: 0.9;
+}
+
+.morph-label {
+  font-weight: bold;
+  margin-bottom: 0.4em;
+}
+
+.morph-pos-head {
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.4em;
+}
+
+.morph-pos-flag {
+  font-weight: normal;
+  font-style: italic;
+  opacity: 0.9;
+  margin-left: 0.2em;
+}
+
+.morph-row {
+  margin-bottom: 0.6em;
+  padding-left: 0.6em;
+}
+
+.morph-row .features {
+  font-style: italic;
+  opacity: 0.9;
+}
+
+.morph-row .roman {
+  opacity: 0.75;
+}
+
+.morph-skip {
+  font-style: italic;
+  opacity: 0.75;
+  padding-left: 0.6em;
+  margin-bottom: 0.6em;
+}
