@@ -2,14 +2,26 @@
    Embedded Fonts
    =========================== */
 
+/* Noto Sans Devanagari is the backup for devices with no Devanagari font of their own. Each rule tries a copy
+   installed on the device first, and downloads the hosted file only if there is none. Windows uses Nirmala UI from
+   the system (it is Microsoft's, so it is never hosted). The files are in the site's fonts/ folder, one level up
+   from this stylesheet, and are built by assets/fonts/build_web_font.py. */
 @font-face {
-  font-family: "Nirmala UI";
-  src: url("fonts/NirmalaUI.ttf");
+  font-family: "Noto Sans Devanagari";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Noto Sans Devanagari"), local("Noto Sans Devanagari Regular"), local("NotoSansDevanagari-Regular"),
+       url("../fonts/NotoSansDevanagari-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Noto Sans Devanagari";
-  src: url("fonts/NotoSansDevanagari-Regular.ttf");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Noto Sans Devanagari Bold"), local("NotoSansDevanagari-Bold"),
+       url("../fonts/NotoSansDevanagari-Bold.woff2") format("woff2");
 }
 
 /* ===========================
